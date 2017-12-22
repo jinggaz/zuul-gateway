@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zuul-gateway
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    enabled: false
+
+#zuul:
+#  routes:
+#    eureka-client1: client1
+#      url: http://localhost:8081
+      
+ribbon:
+  eureka:
+    enabled: true
+    
+server:
+  port: 7777    
